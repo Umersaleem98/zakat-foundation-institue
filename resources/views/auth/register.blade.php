@@ -1,4 +1,4 @@
-@include('layouts.head')
+@include('layouts.admin.head')
 
 
 <style>

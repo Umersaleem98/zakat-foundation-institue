@@ -2,17 +2,19 @@
 
 use App\Http\Controllers\AuthAuthController;
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Home\AboutController;
 use App\Http\Controllers\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AuthMiddleware;
 
 
-
-
-
-
 // Home Controller 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/about-us', [AboutController::class, 'index']);
+Route::get('/mission-vision', [AboutController::class, 'MissionandVision']);
+Route::get('/our-team', [AboutController::class, 'team']);
+Route::get('/our-partner', [AboutController::class, 'team']);
+
 
 
 Route::get('/login', [AuthAuthController::class, 'showLoginForm'])->name('login');

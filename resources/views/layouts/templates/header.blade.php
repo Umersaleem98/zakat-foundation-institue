@@ -19,7 +19,7 @@
                         <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                         <div class="text">
                             <span>Call</span>
-                            <span>Call Us: + 1235 2355 98</span>
+                            <span>Call Us: +1 (317) 223-8973</span>
                         </div>
                     </div>
                     <div class="col-md topper d-flex align-items-center justify-content-end">
@@ -51,63 +51,65 @@
       </form> --}}
 
       <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a href="index.html" class="nav-link pl-0">Home</a>
-              </li>
-
-              <!-- About Us Dropdown -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" 
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      About Us
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-                      <a class="dropdown-item" href="mission-vision.html">Mission & Vision</a>
-                      <a class="dropdown-item" href="our-team.html">Our Team</a>
-                      <a class="dropdown-item" href="our-partner.html">Our Partner</a>
-                  </div>
-              </li>
-
-              <li class="nav-item">
-                  <a href="admission.html" class="nav-link">Admission</a>
-              </li>
-
-              <!-- Program Dropdown -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="programDropdown" role="button" 
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Program
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="programDropdown">
-                      <a class="dropdown-item" href="graduate-certificate.html">Graduate Certificate</a>
-                      <a class="dropdown-item" href="master-of-arts.html">Master of Arts</a>
-                  </div>
-              </li>
-
-              <li class="nav-item">
-                  <a href="announcements.html" class="nav-link">Announcements</a>
-              </li>
-
-              <li class="nav-item">
-                  <a href="research-publication.html" class="nav-link">Research & Publication</a>
-              </li>
-
-              <!-- CMP Dropdown -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="cmpDropdown" role="button" 
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      CMP
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="cmpDropdown">
-                      <a class="dropdown-item" href="professional-development.html">Professional Development Training</a>
-                  </div>
-              </li>
-
-              <li class="nav-item">
-                  <a href="alumni.html" class="nav-link">Alumni</a>
-              </li>
-          </ul>
-      </div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="{{ url('/') }}" class="nav-link pl-0">Home</a>
+            </li>
+    
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" 
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                    <a class="dropdown-item" href="{{ url('about-us') }}">About Us</a>
+                    <a class="dropdown-item" href="{{ url('mission-vision') }}">Mission & Vision</a>
+                    <a class="dropdown-item" href="{{ url('our-team') }}">Our Team</a>
+                    <a class="dropdown-item" href="{{ url('our-partner') }}">Our Partner</a>
+                </div>
+            </li>
+    
+            <li class="nav-item">
+                <a href="{{ url('admission') }}" class="nav-link">Admission</a>
+            </li>
+    
+            <!-- Program Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="programDropdown" role="button" 
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Program
+                </a>
+                <div class="dropdown-menu" aria-labelledby="programDropdown">
+                    <a class="dropdown-item" href="{{ url('graduate-certificate') }}">Graduate Certificate</a>
+                    <a class="dropdown-item" href="{{ url('master-of-arts') }}">Master of Arts</a>
+                </div>
+            </li>
+    
+            <li class="nav-item">
+                <a href="{{ url('announcements') }}" class="nav-link">Announcements</a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="{{ url('research-publication') }}" class="nav-link">Research & Publication</a>
+            </li>
+    
+            <!-- CMP Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cmpDropdown" role="button" 
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CMP
+                </a>
+                <div class="dropdown-menu" aria-labelledby="cmpDropdown">
+                    <a class="dropdown-item" href="{{ url('professional-development') }}">Professional Development Training</a>
+                </div>
+            </li>
+    
+            <li class="nav-item">
+                <a href="{{ url('alumni') }}" class="nav-link">Alumni</a>
+            </li>
+        </ul>
+    </div>
+    
   </div>
 </nav>
