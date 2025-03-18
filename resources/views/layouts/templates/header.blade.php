@@ -83,6 +83,7 @@
                 <div class="dropdown-menu" aria-labelledby="programDropdown">
                     <a class="dropdown-item" href="{{ url('graduate-certificate') }}">Graduate Certificate</a>
                     <a class="dropdown-item" href="{{ url('master-of-arts') }}">Master of Arts</a>
+                    <a class="dropdown-item" href="{{ url('phd') }}">PhD Program</a>
                 </div>
             </li>
     

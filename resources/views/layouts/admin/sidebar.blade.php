@@ -39,14 +39,19 @@
           <li class="nav-item">
             <a data-bs-toggle="collapse" href="#base">
               <i class="fas fa-layer-group"></i>
-              <p>Base</p>
+              <p>Users</p>
               <span class="caret"></span>
             </a>
             <div class="collapse" id="base">
               <ul class="nav nav-collapse">
                 <li>
-                  <a href="components/avatars.html">
-                    <span class="sub-item">Avatars</span>
+                  <a href="{{ url('create') }}">
+                    <span class="sub-item">Create Users</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ url('list') }}">
+                    <span class="sub-item">Users List</span>
                   </a>
                 </li>
 

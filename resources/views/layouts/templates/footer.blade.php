@@ -20,17 +20,24 @@
                 <div class="ftco-footer-widget mb-5 ml-md-4">
                     <h2 class="ftco-heading-2">Links</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a>
-                        </li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a>
-                        </li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
-                        </li>
+                        <li><a href="{{ url('/') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                        <li><a href="{{ url('about-us') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>About Us</a></li>
+                        <li><a href="{{ url('mission-vision') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Mission & Vision</a></li>
+                        <li><a href="{{ url('our-team') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Our Team</a></li>
+                        <li><a href="{{ url('our-partner') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Our Partner</a></li>
+                        {{-- <li><a href="{{ url('admission') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Admission</a></li> --}}
+                        {{-- <li><a href="{{ url('graduate-certificate') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Graduate Certificate</a></li>
+                        <li><a href="{{ url('master-of-arts') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Master of Arts</a></li>
+                        <li><a href="{{ url('phd') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>PhD Program</a></li> --}}
+                        {{-- <li><a href="{{ url('announcements') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Announcements</a></li> --}}
+                        <li><a href="{{ url('research-publication') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Research & Publication</a></li>
+                        <li><a href="{{ url('professional-development') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Professional Development Training</a></li>
+                        <li><a href="{{ url('alumni') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni</a></li>
+                        {{-- <li><a href="{{ url('contact') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li> --}}
                     </ul>
                 </div>
             </div>
+            
             <div class="col-md-6 col-lg-4">
                 <div class="ftco-footer-widget mb-5">
                     <h2 class="ftco-heading-2">Subscribe Us!</h2>

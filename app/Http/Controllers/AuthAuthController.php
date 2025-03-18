@@ -37,21 +37,17 @@ class AuthAuthController extends Controller
 }
 
 
-
 public function register(Request $request)
 {
-    $data = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:6|confirmed'
-    ]);
+    $user = new User;
 
-    User::create([
-        'name' => $data['name'],
-        'email' => $data['email'],
-        'password' => Hash::make($data['password']),
-    ]);
+    $user->name = $request->name;
+    $user->email = $request->email;
+    $user->password = Hash::make($request->password); // Hashing password
+    $user->role = $request->role ?? 'user'; // Default role set to 'user' if not provided
+    $user->save();
 
+    // Redirect to login page with success message
     return redirect()->route('login')->with('success', 'Account created successfully. Please login.');
 }
 
